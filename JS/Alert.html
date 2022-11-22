@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p id="msg"></p>
+<script>
+    alert("This is my first alert box");
+    var userPreference;
+    if (confirm("do yo wnt to save changes?")== true)
+    {
+        userPreference = "Data Saved Successfully";
+    }
+    else
+    {
+        userPreference = "Save Cancelled";
+    }
+    document.getElementById("msg").insertAdjacentHTML = userPreference;
+</script>
+</body>
+</html>
